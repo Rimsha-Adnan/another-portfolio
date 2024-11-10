@@ -4,9 +4,10 @@ import "../../style/scroll.css";
 
 function ScrollUp() {
   useEffect(() => {
-    // Check if `window` is defined to avoid SSR errors
+    
     const handleScroll = () => {
       const scrollUp = document.querySelector(".scrollup") as HTMLElement;
+      // when the scroll is higher than 560 viewport height, add the show-scroll class to a tag with the scroll-top class
       if (window.scrollY >= 560) scrollUp?.classList.add("show-scroll");
       else scrollUp?.classList.remove("show-scroll");
     };

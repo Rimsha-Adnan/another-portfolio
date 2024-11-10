@@ -9,6 +9,7 @@ import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ScrollUp from "./components/ScrollUp";
+import Work from "./components/Work";
 
 export default function page() {
   return (
@@ -20,6 +21,7 @@ export default function page() {
         <Skills/>
         <Services/>
         <Qualification/>
+        <Work/>
         <Testimonials/>
         <Contact/>
         
