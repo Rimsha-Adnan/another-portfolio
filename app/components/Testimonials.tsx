@@ -22,9 +22,9 @@ interface ClientReview {
 
 function Testimonials() {
   return (
-    <section className="testimonial container section">
-        <h2 className="section__title">Services</h2>
-        <span className="section__subtitle">What i offer</span>
+    <section className="testimonial container section" id='testimonial'>
+        <h2 className="section__title">My Clients Say</h2>
+        <span className="section__subtitle">testimonial</span>
     <Swiper className="testimonial__container"
       loop={true}
       grabCursor={true}

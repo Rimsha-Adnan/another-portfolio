@@ -1,10 +1,21 @@
 import React from 'react';
 import Image from 'next/image';
+import { StaticImageData } from 'next/image';
+interface portfolioProjects {
+    id : number,
+    image : StaticImageData ,
+    title : string ,
+    category : string 
+}
 
 function WorkItems({item}) {
   return (
     <div className="work__card" key={item.id}>
         <Image src={item.image} alt="" className="work__img"/>
+        <h3 className="work__title">{item.title}</h3>
+        <a href="#" className="work__button">
+            Demo <i className="bx bx-right-arrow-alt work__button-icon"></i>
+        </a>
     </div>
   )
 }

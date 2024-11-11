@@ -15,39 +15,39 @@ export const projectsData: portfolioProjects[] = [
     {
         id: 1,
         image: Work1,
-        title: "Web design",
+        title: "Web amazon",
         category: "web"
     },
     {
         id: 2,
         image: Work2,
-        title: "App movil",
-        category: "app"
+        title: "Web governer ",
+        category: "web"
     },
     {
         id: 3,
         image: Work3,
-        title: "Brand design",
-        category: "design"
+        title: "Workcounter web",
+        category: "web"
     },
     {
         id: 4,
         image: Work4,
-        title: "App movil",
-        category: "app"
+        title: "Resume design",
+        category: "design"
     },
     {
         id: 5,
         image: Work5,
-        title: "Web design",
-        category: "web"
+        title: "Figma design",
+        category: "design"
     }
 ];
-interface projects {
+interface project {
     name:string
 }
 
-export const projectsNav: projects[] = [
+export const projectsNav: project[] = [
     {
         name:'all',
     },

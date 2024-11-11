@@ -13,11 +13,11 @@ function Footer() {
                 </li>
 
                 <li>
-                    <a href="#project" className="footer__link">Projects</a>
+                    <a href="#portfolio" className="footer__link">Projects</a>
                 </li>
 
                 <li>
-                    <a href="#testimonials" className="footer__link">Testimonials</a>
+                    <a href="#testimonial" className="footer__link">Testimonials</a>
                 </li>
             </ul>
 
