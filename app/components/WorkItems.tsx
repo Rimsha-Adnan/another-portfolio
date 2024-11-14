@@ -1,21 +1,23 @@
 import React from 'react';
 import Image from 'next/image';
-import { StaticImageData } from 'next/image';
-interface portfolioProjects {
-    id : number,
-    image : StaticImageData ,
-    title : string ,
-    category : string 
-}
+import Link from 'next/link';
 
-function WorkItems({item}) {
+
+interface portfolioProjects {
+  id: number;
+  image: string;
+  title: string;
+  category: string;
+  link: string;
+} 
+function WorkItems({ id, image, title, link }: portfolioProjects) {
   return (
-    <div className="work__card" key={item.id}>
-        <Image src={item.image} alt="" className="work__img"/>
-        <h3 className="work__title">{item.title}</h3>
-        <a href="#" className="work__button">
+    <div className="work__card" key={id}>
+        <Image src={image} quality={100} alt="Your image" className="work__img" width={295} height={295}/>
+        <h3 className="work__title">{title}</h3>
+        <Link href={link} className="work__button">
             Demo <i className="bx bx-right-arrow-alt work__button-icon"></i>
-        </a>
+        </Link>
     </div>
   )
 }
