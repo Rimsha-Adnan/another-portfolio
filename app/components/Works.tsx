@@ -3,17 +3,13 @@ import React, { useState, useEffect } from "react";
 import { projectsData } from "./WorkData";
 import { projectsNav } from "./WorkData";
 import WorkItems from "./WorkItems";
-import { StaticImageData } from "next/image";
+
 interface portfolioProjects {
   id: number;
   image: string;
   title: string;
   category: string;
   link : string
-}
-
-interface project {
-  name: string;
 }
 
 function Works() {
